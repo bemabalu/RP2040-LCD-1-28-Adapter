@@ -936,6 +936,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:VCC"
 			(power)
 			(pin_numbers hide)
@@ -1057,6 +1153,36 @@
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 55.88 129.54) (xy 64.77 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c99191b-6f99-400c-85ef-ac6a2965f101")
+	)
+	(wire
+		(pts
+			(xy 57.15 127) (xy 64.77 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2c428c5-b766-4a3b-8d43-9d5bc33e400d")
+	)
+	(wire
+		(pts
+			(xy 57.15 132.08) (xy 64.77 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26a2672-6cef-47b3-ad3c-fe419195b27a")
+	)
 	(global_label "GP14"
 		(shape input)
 		(at 57.15 97.79 180)
@@ -1123,7 +1249,7 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "GP0{slash}Tx0"
 		(shape input)
 		(at 69.85 82.55 0)
 		(fields_autoplaced yes)
@@ -1135,7 +1261,7 @@
 		)
 		(uuid "0b0cfb36-71b3-4f93-9ce6-ee7b48d6605a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.5847 82.55 0)
+			(at 81.1204 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +1360,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "GP1{slash}Rx0"
 		(shape input)
 		(at 115.57 86.36 0)
 		(fields_autoplaced yes)
@@ -1246,7 +1372,7 @@
 		)
 		(uuid "188b6872-1df2-4d8d-9b5a-5920ea175eae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.3047 86.36 0)
+			(at 127.1428 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1652,7 @@
 			)
 		)
 	)
-	(global_label "GP1"
+	(global_label "GP1{slash}Rx0"
 		(shape input)
 		(at 69.85 85.09 0)
 		(fields_autoplaced yes)
@@ -1769,6 +1895,28 @@
 			)
 		)
 	)
+	(global_label "GP1{slash}Rx0"
+		(shape input)
+		(at 57.15 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58adc7cc-db28-44d2-9ebb-a1aa7104ffc0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.5772 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GP10\\LCD_CLK"
 		(shape input)
 		(at 57.15 87.63 180)
@@ -1973,7 +2121,7 @@
 			)
 		)
 	)
-	(global_label "GP0"
+	(global_label "GP0{slash}Tx0"
 		(shape input)
 		(at 115.57 83.82 0)
 		(fields_autoplaced yes)
@@ -2504,6 +2652,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GP0{slash}Tx0"
+		(shape input)
+		(at 57.15 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e400cf72-f982-4314-9beb-f69ffe2bc639")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.4153 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3147,6 +3317,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 39.37 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22b79440-a96c-4fe0-b9f6-15eda712c492")
+		(property "Reference" "#PWR018"
+			(at 35.56 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSYS"
+			(at 43.18 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a74ce2d-c91f-4cc2-b6f4-2105e15c000f")
+		)
+		(instances
+			(project "RP2040-LCD-1,28"
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 166.37 83.82 90)
 		(unit 1)
@@ -3344,6 +3581,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 55.88 129.54 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f1a4b4e-2925-4e20-b4cd-0ad1802fdfb9")
+		(property "Reference" "#PWR017"
+			(at 49.53 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 55.88 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3b6a0b8-b73e-45ca-a638-7b69fa4e6f45")
+		)
+		(instances
+			(project "RP2040-LCD-1,28"
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 119.38 129.54 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3404,6 +3707,73 @@
 			(project "RP2040-LCD-1,28"
 				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "363f8e23-767c-427a-b6c8-8a57e044b092")
+		(property "Reference" "#PWR019"
+			(at 45.72 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fe3fa0bc-a076-4674-bbfd-76f0233c2bfc")
+		)
+		(instances
+			(project "RP2040-LCD-1,28"
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -3867,6 +4237,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 39.37 48.26 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7489462f-ecf8-4ccf-9e02-5c7e9cef21e9")
+		(property "Reference" "#PWR020"
+			(at 35.56 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ADC_AVDD"
+			(at 43.18 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 39.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "726bd909-27e2-4a5a-9327-81cf924c6d90")
+		)
+		(instances
+			(project "RP2040-LCD-1,28"
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 213.36 83.82 90)
 		(unit 1)
@@ -3995,6 +4432,73 @@
 			(project "RP2040-LCD-1,28"
 				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 39.37 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fca4d86-79f1-46d1-b048-bf72354ea803")
+		(property "Reference" "#FLG01"
+			(at 37.465 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 35.56 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 39.37 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c893eb7a-e592-41bc-ac52-1ee18592d8e7")
+		)
+		(instances
+			(project ""
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -4336,6 +4840,213 @@
 			(project ""
 				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 39.37 58.42 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f72331a2-1aaf-4a29-b6ae-df48bbd0abd4")
+		(property "Reference" "#FLG03"
+			(at 37.465 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 35.56 58.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 39.37 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17818774-9ffa-4019-89c2-c9fa9f93701f")
+		)
+		(instances
+			(project "RP2040-LCD-1,28"
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 39.37 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc3ff013-0f3d-4fa9-8777-362fc44575ba")
+		(property "Reference" "#FLG02"
+			(at 37.465 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 35.56 53.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 39.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ab5ae85-24b2-4b45-a7b0-965660eb3a26")
+		)
+		(instances
+			(project "RP2040-LCD-1,28"
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 69.85 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "febdce74-0e7b-4a99-a03e-ab7ed51061a5")
+		(property "Reference" "J5"
+			(at 72.39 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 72.39 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:PinHeader_1x03_P2.54mm_Vertical"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 69.85 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "976c1d07-b57e-4a2a-90e5-9f2764f2f4ae")
+		)
+		(pin "3"
+			(uuid "4309aeee-1605-4b2e-986b-e38fe8abc28c")
+		)
+		(pin "1"
+			(uuid "a73dab98-8ca9-4b63-9459-e4f4dfe7315e")
+		)
+		(instances
+			(project "RP2040-LCD-1,28"
+				(path "/d3099ff7-09b4-4f43-b993-d32c51436ae4"
+					(reference "J5")
 					(unit 1)
 				)
 			)
